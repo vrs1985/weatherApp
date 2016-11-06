@@ -1,0 +1,121 @@
+body{
+    background: #3F51B5;
+    color:  #fff;
+}
+.container{
+    display: block;
+    width:  650px;
+    margin:  0 auto;
+}
+h3{
+    font-size: 24px;
+    font-weight:   400;
+    display: block;
+    margin-top: 118px;
+    text-align: center;
+    font-family: "Arial";
+}
+input{
+    outline: none !important;
+}
+.input-search{
+    display: block;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin:     0 auto;
+    margin-top: 47px;
+    border: 2px solid #fff;
+    width: 646px;
+    height: 48px;
+}
+input[type=search-field]{
+    display: inline-block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(646px - 77px);
+    height: 44px;
+    padding-left: 15px;
+    border: none;
+    font-size: 18px;
+    color: #FFF;
+    background:   none !important;
+}
+input[type=search-field]::-moz-placeholder {
+    color: #FFF;
+    }
+input[type=search-field]::-webkit-input-placeholder {
+    color: #FFF;
+ }
+
+input[type=button]{
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    width: 73px;
+    height: 44px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #3F51B5;
+}
+.weather{
+    margin: 0.5em 0;
+    list-style-type: none;
+    list-style-position: outside;
+}
+.weather:before{
+    content: '- ';
+}
+#currentWeather{
+margin-top: 50px;
+padding-left: 0;
+display: block;
+}
+#clear{
+    font-size: 18px;
+    margin: 40px auto;
+    display: block;
+    width: 62px;
+    height: 28px;
+    background-color: #FFF;
+    color: #3F51B5;
+    text-align: center;
+    line-height: 1.5em;
+    cursor: pointer;
+    border: 2px solid #fff;
+    letter-spacing: 0.5px;
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+}
+#clear:hover{
+    background-color: #3F51B5;
+    color: #FFF;
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+        width: 100%;
+    }
+    h3{
+        margin-top: 10px;
+    }
+    .input-search{
+        width: 100%;
+        margin-top: 10px;
+    }
+    input[type=search-field]{
+        width: calc(100% - 71px);
+    }
+    #currentWeather {
+        margin-top: 10px;
+    }
+    #clear{
+        margin-top: 10px;
+    }
+}
